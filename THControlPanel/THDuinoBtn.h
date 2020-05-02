@@ -1,3 +1,9 @@
+/*
+THControlPanel by Alvpjh
+https://github.com/alvpjh/THControlPanel
+02/05/2020
+*/
+
 #ifndef THDuinoBtn_h
 #define THDuinoBtn_h
 
