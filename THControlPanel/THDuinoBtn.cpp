@@ -6,14 +6,11 @@ https://github.com/alvpjh/THControlPanel
 
 #include "THDuinoBtn.h"
 
-THDuinoBtn::THDuinoBtn(void)
-{
+THDuinoBtn::THDuinoBtn(void){
 	m_ucStatus = _THD_BTN_UP;
 }
 
-THDuinoBtn::~THDuinoBtn(void)
-{
-}
+THDuinoBtn::~THDuinoBtn(void){}
 
 bool THDuinoBtn::bUp(void){
 	if(m_ucStatus == _THD_BTN_UP)     return true;
@@ -32,8 +29,7 @@ bool THDuinoBtn::bRelease(void){
 	return false;
 }
 
-void THDuinoBtn::vUpdate(bool bPin)
-{
+void THDuinoBtn::vUpdate(bool bPin){
   switch(m_ucStatus){
       case _THD_BTN_UP      : if(bPin)  m_ucStatus = _THD_BTN_PRESS;  else m_ucStatus = _THD_BTN_UP;      break;
       case _THD_BTN_PRESS   : if(bPin)  m_ucStatus = _THD_BTN_HOLD;   else m_ucStatus = _THD_BTN_RELEASE; break;
@@ -42,7 +38,6 @@ void THDuinoBtn::vUpdate(bool bPin)
     }
 }
 
-unsigned char THDuinoBtn::ucGetStatus(void)
-{
+unsigned char THDuinoBtn::ucGetStatus(void){
 	return m_ucStatus;
 }
