@@ -1,3 +1,9 @@
+/*
+THControlPanel by Alvpjh
+https://github.com/alvpjh/THControlPanel
+02/05/2020
+*/
+
 #include "THDuinoBtn.h"
 
 THDuinoBtn::THDuinoBtn(void)
